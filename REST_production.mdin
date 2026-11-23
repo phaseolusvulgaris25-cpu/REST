@@ -1,0 +1,43 @@
+A NPT simulation for common production-level simulations
+ &cntrl
+    imin=0,        ! No minimization
+    irest=1,       ! This IS a restart of an old MD simulation
+    ntx=5,         ! So our inpcrd file has velocities
+
+    ! Temperature control
+    ntt=3,         
+    gamma_ln=1.0,  
+    temp0=310.15,   
+
+    ! Potential energy control
+    cut=9.0,       ! nonbonded cutoff, in Angstroms
+
+    ! MD settings
+    nstlim=50000000, 
+    dt=0.002,      
+
+    ! SHAKE
+    ntc=2,         
+    ntf=2,         
+
+    ! Control how often information is printed
+    ntpr=1000,     
+    ntwx=50000,    
+    ntwr=10000,    
+!   ntwv=-1,       
+!   ntwf=-1,       
+    ntxo=2,        
+    ioutfm=1,      
+
+    ! Wrap coordinates when printing them to the same unit cell
+    iwrap=1,
+
+    ! Constant pressure control.
+    barostat=2,    
+    ntp=1,         
+    pres0=1.0,     
+
+    ! Set water atom/residue names for SETTLE recognition
+    watnam='WAT',  
+    owtnm='O',     
+ /

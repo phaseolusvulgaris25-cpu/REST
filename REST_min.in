@@ -1,0 +1,24 @@
+
+ &cntrl
+  imin   = 1,
+  ntmin  = 1,
+  maxcyc = 10000,
+  ncyc   = 5000,
+  ntb    = 1,
+  ntr    = 1,
+  ntx    = 1,
+  irest  = 0,
+  ntf    = 1,                                                                  
+  nsnb   = 10,                                                                 
+  ntpr   = 100,
+  cut    = 9.0
+ /
+Protein posres
+1.0
+RES 1 159
+END
+END
+/
+
+#Note: The RES section (RES 1 159) must be adjusted individually for each PDB structure according to its corresponding residue range. 
+# Please ensure that the residue numbers are consistent with the specific PDB file being processed.
